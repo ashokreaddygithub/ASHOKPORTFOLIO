@@ -2,10 +2,9 @@
 <html>
     <head>
         <meta charset="utf-8" />
-    <meta
+        <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta
       name="description"
       content=" Here We talk about how the Latest Technologies the change the market."
@@ -18,9 +17,10 @@
             body{
                 width:100%;
                 height: 100%;
-                background-image:url(./Images/photo1.jpeg);
+                background-color: rgba(0,0,0,0.9);
                 margin: 0;
                 color:#fff;
+                font-family: fantasy;
             }
             .home-page{
                 width:50%;
@@ -30,32 +30,30 @@
 
             }
             .home-details{
-                
-                display: flex;
-                justify-content: center;
+                position: fixed;
+                width:100%;
+                top:0;
+                display:flex;
                 flex-wrap: wrap;
-
+                justify-content: space-around;
+                background-color: black;
+                padding: 15px 10px;
+                box-shadow: 0 1px 3px 1px rgba(256,256,256,.2);
             }
-            .home-details > p{
-                padding: 10px 25px;
-                border: 1px solid white;
+            .home-details p{
+                padding: 0 15px;
             }
-            .home-details > p:hover{
-                background-color: rgba(256,256,256,.4);
+            .home-details p:hover{
+                text-shadow: 1px 1px 10px #FFf;
             }
             .resume,.gallery,.cover-letter,.bibliography,.summary,.library{
-                display: none;
-                width:70%;
-                margin: auto;
                 margin-top: 5%;
-                background-color: rgba(0,0,0,0.6);
+                display:none;
                 padding:30px;
                 border-radius: 7px;
-                height: 850px;
-                overflow: scroll;
+                padding-top:70px;
                 margin-bottom: 5%;
             }
-
             h2.header{
                 font-weight: 500;
                 display: inline;
@@ -89,11 +87,7 @@
                 line-height: 1.4em;
                 font-weight: 100;
             }
-            .multi1,.multi2,.multi3,.multi4,.multi5,.multi6{
-                float:right;
-                margin: 0;
-                cursor:default;
-            }
+
             .images{
                 width:65%;
                 margin: auto;
@@ -123,12 +117,6 @@
         </style>
     </head>
     <body>
-        <div class="home-page">
-            <hr/><br/>
-            <h1 style="font-weight:500">VENKATA ASHOK KUMAR REDDY MARAM</h1>
-            <p style="font-weight:500">TO KNOW MORE ABOUT ME CHOOSE THE FOLLOWING..</p><br/>
-            <hr/>
-        </div>
         <div class="home-details">
                 <p class="res">RESUME</p>
                 <p class="gal">GALLERY</p>
@@ -137,9 +125,15 @@
                 <p class="bib">BIBLIOGRAPHY</p>
                 <P class="lib">LIBRARY</P>
         </div>
+        <div class="home-page">
+            <hr/><br/>
+            <h1 style="font-weight:500">VENKATA ASHOK KUMAR REDDY MARAM</h1>
+            <p style="font-weight:500">TO KNOW MORE ABOUT ME CHOOSE THE FOLLOWING..</p><br/>
+            <hr/>
+        </div>
+
         
         <div class="resume">
-            <h2 class="multi1">&#215;</h2>
             <h2 class="header">RESUME</h2>
             <div style="text-align: center">
                 <h2 style="font-weight: 500; letter-spacing: 5px">MARAM VENKATA ASHOK KUMAR REDDY</h2>
@@ -180,7 +174,7 @@
             </ul>
         </div>
         <div class="gallery">
-            <h2 class="multi2">&#215;</h2>
+
             <h2 class="header">GALLERY</h2>
             <div class="images">
                 <img src="./Images/photo1.jpeg"/>
@@ -190,12 +184,12 @@
             </div>
         </div>
         <div class="cover-letter">
-            <h2 class="multi3">&#215;</h2>
+
             <h2 class="header">COVER LETTER</h2>
             <h3 style="font-weight: 500;letter-spacing: 1px;margin:30px 0">Venkata Ashok Kumar Reddy Maram</h3>
             <div class="cover-matter">
                 <p>From:</p>
-                <p>Boston,MA.</p>
+                <p>New Berry Port,MA.</p>
                 <p>To:</p>
                 <p>Hiring Mananger,</p>
                 <p>NELSON M.</p>
@@ -203,7 +197,7 @@
             </div>
         </div>
         <div class="summary">
-            <h2 class="multi4">&#215;</h2>
+
             <h2 class="header">ANNOTATED SUMMARY</h2>
             <h4>Morgan, J. (2020). Electric vehicles: the future we made and the problem of unmaking it. Cambridge Journal of Economics, 44(4), 953-977.</h4>
             <p>The overstatement of the efficiency of electric cars has been a problem. At the beginning of the 20th century, a number of companies were at the front of electric car manufacturers. The creation of a longer cell that could store enough fuel to produce electric vehicles practicable proved to be a hurdle to the development of the electric car. The first electric cars appeared in the late 1800s. Because of their expensive price, limited speed, and short range, they didn't fare well in the market before. As a result, at first, there was a global fall in demand. But they have been utilized for access to public transport transit, notably as rail vehicles. Internal combustion automobiles had a competitive advantage in the early years of the twentieth century because of the underdevelopment of electric-operated cars. Because of the ten-year head start that internal combustion cars had over electrically powered vehicles, the latter had not been able to recover. Internal combustion engine-powered cars saw a significant increase in sales, which allowed for improved efficiency in combustion engines to be developed.</p>
@@ -213,7 +207,7 @@
             <p>An appropriate power cell had to be developed, and this resulted in significant expenses. The Edison company's research and development was six years behind schedule. The costly development of advanced items necessitates rapid revenues for many businesses. Stakeholders expect companies to react. The lack of progress in the creation of energy cells for electric batteries might be attributed to a need for fast profits.</p>
         </div>
         <div class="bibliography">
-            <h2 class="multi5">&#215;</h2>
+
             <h2 class="header">ANNOTATED BIBLIOGRAPHY</h2>
             <br/><br/><br/>
             <div class="matter">
@@ -224,7 +218,6 @@
             </div>
         </div>
         <div class="library">
-            <h2 class="multi6">&#215;</h2>
             <h2 class="header">LIBRARY RESOURCES</h2>
             <p>Research databases do aim to offer user for getting access to thousands of magazines, books, images, chart, and primary sources. The identified database does comprise of some scholarly and peer-reviewed articles being written using credible author like researchers and expert within the domain (UMOSO, 2021). As databases do allow some powerful searching tools used for narrowing results. Here users can quickly move and find the required information needed. </p>
             <p> An application tracking software is best software used for recruiting and employers make use of this for tracking down candidates within hiring and recruiting process. This software can be easily equipped with certain capabilities do range from simple database functionality to full-time services. This tool makes it much easy for various business of any size so they can filter, manage, and thereby analyzed candidates (Lindström, 2018). The article emphasizes on use of applicant tracking system which stand out to be unique to companies. But here each one can thrive for attracting, hiring and maximizing the top talent. Most of the business do encounter some sort of challenges at some point within case of hiring onboarding process. The fact should be noted an ATS can be offered with range of capabilities which can ultimately help involved companies to find, hire and thereby retain the best candidates. </p>
@@ -235,7 +228,6 @@
         </div>
         <script>
             const homePage = document.querySelector(".home-page");
-            const homeDetails =document.querySelector(".home-details");
             const resume=document.querySelector(".resume");
             const gallery =document.querySelector(".gallery");
             const coverLetter=document.querySelector(".cover-letter");
@@ -245,65 +237,59 @@
             
             document.querySelector(".res").addEventListener("click",function(){
                 homePage.style.display="none";
-                homeDetails.style.display="none";
+                library.style.display="none";
+                gallery.style.display="none";
+                coverLetter.style.display="none";
+                summary.style.display="none";
+                bibliography.style.display="none";
                 resume.style.display="block";
             });
             document.querySelector(".gal").addEventListener("click",function(){
                 homePage.style.display="none";
-                homeDetails.style.display="none";
+                library.style.display="none";
+                coverLetter.style.display="none";
+                summary.style.display="none";
+                bibliography.style.display="none";
+                resume.style.display="none";
                 gallery.style.display="block";
             })
             document.querySelector(".cov").addEventListener("click",function(){
                 homePage.style.display="none";
-                homeDetails.style.display="none";
+                library.style.display="none";
+                gallery.style.display="none";
+                summary.style.display="none";
+                bibliography.style.display="none";
+                resume.style.display="none";
                 coverLetter.style.display="block";
             })
             document.querySelector(".sum").addEventListener("click",function(){
                 homePage.style.display="none";
-                homeDetails.style.display="none";
+                library.style.display="none";
+                gallery.style.display="none";
+                coverLetter.style.display="none";
+                bibliography.style.display="none";
+                resume.style.display="none";
                 summary.style.display="block";
             })
              document.querySelector(".bib").addEventListener("click",function(){
                 homePage.style.display="none";
-                homeDetails.style.display="none";
+                library.style.display="none";
+                gallery.style.display="none";
+                coverLetter.style.display="none";
+                summary.style.display="none";
+                resume.style.display="none";
                 bibliography.style.display="block";
             })
               document.querySelector(".lib").addEventListener("click",function(){
                 homePage.style.display="none";
-                homeDetails.style.display="none";
+                gallery.style.display="none";
+                coverLetter.style.display="none";
+                summary.style.display="none";
+                bibliography.style.display="none";
+                resume.style.display="none";
                 library.style.display="block";
             })
-            document.querySelector(".multi1").addEventListener("click",function(){
-                homePage.style.display="block";
-                homeDetails.style.display="flex";
-                resume.style.display="none";
-            })
-            document.querySelector(".multi2").addEventListener("click",function(){
-                homePage.style.display="block";
-                homeDetails.style.display="flex";
-                gallery.style.display="none";
-            })
-            document.querySelector(".multi3").addEventListener("click",function(){
-                homePage.style.display="block";
-                homeDetails.style.display="flex";
-                coverLetter.style.display="none";
-            })
-        document.querySelector(".multi4").addEventListener("click",function(){
-                homePage.style.display="block";
-                homeDetails.style.display="flex";
-                summary.style.display="none";
-            })
-           document.querySelector(".multi5").addEventListener("click",function(){
-                homePage.style.display="block";
-                homeDetails.style.display="flex";
-                bibliography.style.display="none";
-            })
-            document.querySelector(".multi6").addEventListener("click",function(){
-                homePage.style.display="block";
-                homeDetails.style.display="flex";
-                library.style.display="none";
-            })
-            
+  
             
         </script>
     </body>
