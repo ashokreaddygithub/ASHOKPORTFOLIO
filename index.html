@@ -46,13 +46,12 @@
             .home-details p:hover{
                 text-shadow: 1px 1px 10px #FFf;
             }
-            .resume,.gallery,.cover-letter,.bibliography,.summary,.library{
+            .resume,.gallery,.cover-letter,.cover-letter-2,.bibliography,.summary,.library{
                 margin-top: 5%;
                 display:none;
-                padding:30px;
+                padding:30px 30px 0px 30px;
                 border-radius: 7px;
                 padding-top:70px;
-                margin-bottom: 5%;
             }
             h2.header{
                 font-weight: 500;
@@ -109,18 +108,37 @@
                 font-size:17px;
                 line-height: 1.4em;
             }
-            @media screen and (max-width:900px){
-            .resume,.gallery,.cover-letter,.bibliography,.summary,.library{
-                width:90%;
+            .social-media{
+                text-align: center;
+				padding-top: 30px;
             }
- 
+            .social-media a{
+                padding: 30px 15px;
+            }
+            @media screen and (max-width:945px){
+            .resume,.gallery,.cover-letter,.cover-letter-2,.bibliography,.summary,.library{
+				margin-top: 11%;
+            }
+			}
+			@media screen and (max-width:680px){
+            .resume,.gallery,.cover-letter,.cover-letter-2,.bibliography,.summary,.library{
+				margin-top: 18%;
+            }
+			}
+			@media screen and (max-width:560px){
+            .resume,.gallery,.cover-letter,.cover-letter-2,.bibliography,.summary,.library{
+				margin-top: 30%;
+            }
+			}
+
         </style>
     </head>
     <body>
         <div class="home-details">
                 <p class="res">RESUME</p>
                 <p class="gal">GALLERY</p>
-                <p class="cov">COVER LETTER</p>
+                <p class="cov">COVER LETTER - 1</p>
+                <p class="cov1">COVER LETTER - 2</p>
                 <p class="sum">SUMMARY</p>
                 <p class="bib">BIBLIOGRAPHY</p>
                 <P class="lib">LIBRARY</P>
@@ -138,6 +156,11 @@
             <div style="text-align: center">
                 <h2 style="font-weight: 500; letter-spacing: 5px">MARAM VENKATA ASHOK KUMAR REDDY</h2>
             </div>
+			<h4>Contact </h4>
+			<p>Mail-id: ashok.maram1@gmail.com </p>
+			<p>Phone: 1 (347)216-8881</p>
+			<p>Address:  226 Merrimac Street, New Berry Port MA 01950.</p>
+			<p>Birth Date: August 3rd 2000</p>
             <h4>QUICK SUMMER</h4>
             <p>Seeking a beginner role to enhance and explore my technical knowledge. I have the flexibility to adapt to any new environment and work tirelessly on interesting projects.</p>
             <h4>EDUCATION</h4>
@@ -183,6 +206,25 @@
                 <img src="./Images/photo5.jpeg"/>
             </div>
         </div>
+        <div class="cover-letter-2">
+
+            <h2 class="header">COVER LETTER</h2>
+            <h3 style="font-weight: 500;letter-spacing: 1px;margin:30px 0">Venkata Ashok Kumar Reddy Maram</h3>
+            <div class="cover-matter">
+                <p>From:</p>
+                <p>New Berry Port,MA.</p>
+                <p>To:</p>
+                <p>Hiring Mananger,</p>
+                <p>NELSON M.</p>
+                <p style="line-height: 1.6em">I have found in Indeed that you are searching for Associated Data Scientists and I would like to apply for the position in your esteemed organization. Moreover, to justify my candidature I would like to inform you that I have done an undergrad in Computer Science and currently pursuing a Bachelor’s degree in Data Science. I have always been fond of data and wanted to know the way to interpret data. During my degree course, I have learned many things related to data and developed a wide range of skills and knowledge. I would like to serve your organization with my academic knowledge and skills. I hope I will learn a lot and gain many challenging real-life experiences in your organization and enrich myself with new skills and knowledge relevant to the industry. Moreover, at the same time, I will strive to maintain the reputation and image of the organization.</p>
+                <p style="line-height: 1.6em">For your kind perusal, I have attached my updated resume. </p>
+                <p style="line-height: 1.6em">I look forward to hearing from you soon </p>
+                <p style="line-height: 1.6em">With regards </p>
+                <p style="line-height: 1.6em">Yours sincerely </p>
+                <p style="line-height: 1.6em">Venkata Ashok Kumar Reddy Maram </p>
+                
+            </div>
+        </div>
         <div class="cover-letter">
 
             <h2 class="header">COVER LETTER</h2>
@@ -226,6 +268,15 @@
             <p>An ATS tracking system do provides a range of solutions for meeting up the hiring challenges encountered by recruiters (Lindström, 2018). This do range from sourcing to analyzing to selecting the best available candidate applicant tracking system which can help in enhancing experience of candidate. </p>
             
         </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/ashokreddy.prince143" target="_blank">
+                <img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Facebook_svg-512.png" style="background: white;width:45px;border-radius: 70px " /></a>
+            <a href="https://www.instagram.com/p/CgyH53mgeED/?igshid=YmMyMTA2M2Y=" target="_blank">
+                <img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Instagram_svg-512.png" style="background: white;width:45px;border-radius: 70px" /></a>
+            <a href="http://linkedin.com/in/maram-ashok-kumar-08b326148" target="_blank">
+                <img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Linkedin_svg-512.png" style="background: white;width:45px;border-radius: 70px" /></a>
+            
+        </div>
         <script>
             const homePage = document.querySelector(".home-page");
             const resume=document.querySelector(".resume");
@@ -234,20 +285,25 @@
             const summary=document.querySelector(".summary");
             const bibliography=document.querySelector(".bibliography");
             const library=document.querySelector(".library");
+            const coverLetter2=document.querySelector(".cover-letter-2");
+            
             
             document.querySelector(".res").addEventListener("click",function(){
                 homePage.style.display="none";
                 library.style.display="none";
                 gallery.style.display="none";
                 coverLetter.style.display="none";
+                coverLetter2.style.display="none";
                 summary.style.display="none";
                 bibliography.style.display="none";
                 resume.style.display="block";
+                
             });
             document.querySelector(".gal").addEventListener("click",function(){
                 homePage.style.display="none";
                 library.style.display="none";
                 coverLetter.style.display="none";
+                coverLetter2.style.display="none";
                 summary.style.display="none";
                 bibliography.style.display="none";
                 resume.style.display="none";
@@ -258,15 +314,27 @@
                 library.style.display="none";
                 gallery.style.display="none";
                 summary.style.display="none";
+                coverLetter2.style.display="none";
                 bibliography.style.display="none";
                 resume.style.display="none";
                 coverLetter.style.display="block";
+            })
+            document.querySelector(".cov1").addEventListener("click",function(){
+                homePage.style.display="none";
+                library.style.display="none";
+                gallery.style.display="none";
+                summary.style.display="none";
+                bibliography.style.display="none";
+                resume.style.display="none";
+                coverLetter.style.display="none";
+                coverLetter2.style.display="block";
             })
             document.querySelector(".sum").addEventListener("click",function(){
                 homePage.style.display="none";
                 library.style.display="none";
                 gallery.style.display="none";
                 coverLetter.style.display="none";
+                coverLetter2.style.display="none";
                 bibliography.style.display="none";
                 resume.style.display="none";
                 summary.style.display="block";
@@ -276,6 +344,7 @@
                 library.style.display="none";
                 gallery.style.display="none";
                 coverLetter.style.display="none";
+                coverLetter2.style.display="none";
                 summary.style.display="none";
                 resume.style.display="none";
                 bibliography.style.display="block";
@@ -284,6 +353,7 @@
                 homePage.style.display="none";
                 gallery.style.display="none";
                 coverLetter.style.display="none";
+                coverLetter2.style.display="none";
                 summary.style.display="none";
                 bibliography.style.display="none";
                 resume.style.display="none";
