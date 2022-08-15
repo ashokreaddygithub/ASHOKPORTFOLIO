@@ -27,6 +27,7 @@
                  padding:30px 30px 0px 30px;
                  border-radius: 7px;
                  padding-top:70px;
+				text-align: center;
             }
             .home-details{
                 position: fixed;
@@ -39,25 +40,37 @@
                 padding: 15px 10px;
                 box-shadow: 0 1px 3px 1px rgba(256,256,256,.2);
             }
+			.home-details-1{
+				display: none;
+				text-align: center;
+				margin: 5%;
+			}
+			
+			.home-details-1 p{
+                padding:30px 0;
+            }
+			
             .home-details p{
                 padding: 0 15px;
             }
             .home-details p:hover{
                 text-shadow: 1px 1px 10px #FFf;
             }
-            .resume,.cover-letter,.cover-letter-2,.bibliography,.summary,.library{
-                margin-top: 5%;
+			.home-details-1 p:hover{
+				text-shadow: 1px 1px 10px #FFf;
+			}
+            .resume,.gallery,.cover-letter,.cover-letter-2,.bibliography,.summary,.library{
                 display:none;
                 padding:30px 30px 0px 30px;
                 border-radius: 7px;
-                padding-top:70px;
             }
-			 .gallery{
-                margin-top: 5%;
-                padding:30px 30px 0px 30px;
-                border-radius: 7px;
-                padding-top:70px;
-            }
+			.multi-x{
+				display: inline;
+				float: right;
+				margin: 0;
+				font-size: 60px;
+				top:0;
+			}
             h2.header{
                 font-weight: 500;
                 display: inline;
@@ -120,36 +133,17 @@
             .social-media a{
                 padding: 30px 15px;
             }
-            @media screen and (max-width:945px){
-            .resume,.cover-letter,.cover-letter-2,.bibliography,.summary,.library{
-				margin-top: 11%;
-            }
-				.home-page{
-					margin-top: 10%;
-				}
-			}
-			@media screen and (max-width:680px){
-            .resume,.cover-letter,.cover-letter-2,.bibliography,.summary,.library{
-				margin-top: 18%;
-            }
-				.home-page{
-					margin-top: 19%;
-				}
-			}
-			@media screen and (max-width:560px){
-            .resume,.cover-letter,.cover-letter-2,.bibliography,.summary,.library{
-				margin-top: 35%;
-            }
-				.home-page{
-					margin-top: 36%;
-				}
-			}
-
         </style>
     </head>
     <body>
         <div class="home-details">
-			    <p class="intr">INTRO</p>
+			<p class="intr">INTRO</p>
+			<p class="gal">GALLERY</p>
+			<p class="assign">ASSIGNMENTS</p>
+        </div>
+		 <div class="home-details-1">
+			  <h2 class="header">ASSIGNMENTS</h2>
+			    <p class="home">HOME</p>
                 <p class="res">RESUME</p>
                 <p class="cov">COVER LETTER - 1</p>
                 <p class="cov1">COVER LETTER - 2</p>
@@ -165,6 +159,9 @@
 
         
         <div class="resume">
+			<h1 id="mul1" class="multi-x">&#215;</h1>
+			<br/>
+			<br/>
             <h2 class="header">RESUME</h2>
             <div style="text-align: center">
                 <h2 style="font-weight: 500; letter-spacing: 5px">MARAM VENKATA ASHOK KUMAR REDDY</h2>
@@ -210,7 +207,6 @@
             </ul>
         </div>
         <div class="gallery">
-
             <h2 class="header">GALLERY</h2>
             <div class="images">
                 <img src="./Images/photo1.jpeg"/>
@@ -220,7 +216,9 @@
             </div>
         </div>
         <div class="cover-letter-2">
-
+			<h1 id="mul2" class="multi-x">&#215;</h1>
+			<br/>
+			<br/>
             <h2 class="header">COVER LETTER</h2>
             <h3 style="font-weight: 500;letter-spacing: 1px;margin:30px 0">Venkata Ashok Kumar Reddy Maram</h3>
             <div class="cover-matter">
@@ -239,7 +237,9 @@
             </div>
         </div>
         <div class="cover-letter">
-
+			<h1 id="mul3" class="multi-x">&#215;</h1>
+			<br/>
+			<br/>
             <h2 class="header">COVER LETTER</h2>
             <h3 style="font-weight: 500;letter-spacing: 1px;margin:30px 0">Venkata Ashok Kumar Reddy Maram</h3>
             <div class="cover-matter">
@@ -252,7 +252,9 @@
             </div>
         </div>
         <div class="summary">
-
+			<h1 id="mul4" class="multi-x">&#215;</h1>
+			<br/>
+			<br/>
             <h2 class="header">ANNOTATED SUMMARY</h2>
             <h4>Morgan, J. (2020). Electric vehicles: the future we made and the problem of unmaking it. Cambridge Journal of Economics, 44(4), 953-977.</h4>
             <p>The overstatement of the efficiency of electric cars has been a problem. At the beginning of the 20th century, a number of companies were at the front of electric car manufacturers. The creation of a longer cell that could store enough fuel to produce electric vehicles practicable proved to be a hurdle to the development of the electric car. The first electric cars appeared in the late 1800s. Because of their expensive price, limited speed, and short range, they didn't fare well in the market before. As a result, at first, there was a global fall in demand. But they have been utilized for access to public transport transit, notably as rail vehicles. Internal combustion automobiles had a competitive advantage in the early years of the twentieth century because of the underdevelopment of electric-operated cars. Because of the ten-year head start that internal combustion cars had over electrically powered vehicles, the latter had not been able to recover. Internal combustion engine-powered cars saw a significant increase in sales, which allowed for improved efficiency in combustion engines to be developed.</p>
@@ -262,7 +264,9 @@
             <p>An appropriate power cell had to be developed, and this resulted in significant expenses. The Edison company's research and development was six years behind schedule. The costly development of advanced items necessitates rapid revenues for many businesses. Stakeholders expect companies to react. The lack of progress in the creation of energy cells for electric batteries might be attributed to a need for fast profits.</p>
         </div>
         <div class="bibliography">
-
+			<h1  id="mul5" class="multi-x">&#215;</h1>
+			<br/>
+			<br/>
             <h2 class="header">ANNOTATED BIBLIOGRAPHY</h2>
             <br/><br/><br/>
             <div class="matter">
@@ -273,6 +277,9 @@
             </div>
         </div>
         <div class="library">
+			<h1 id="mul6" class="multi-x">&#215;</h1>
+			<br/>
+			<br/>
             <h2 class="header">LIBRARY RESOURCES</h2>
             <p>Research databases do aim to offer user for getting access to thousands of magazines, books, images, chart, and primary sources. The identified database does comprise of some scholarly and peer-reviewed articles being written using credible author like researchers and expert within the domain (UMOSO, 2021). As databases do allow some powerful searching tools used for narrowing results. Here users can quickly move and find the required information needed. </p>
             <p> An application tracking software is best software used for recruiting and employers make use of this for tracking down candidates within hiring and recruiting process. This software can be easily equipped with certain capabilities do range from simple database functionality to full-time services. This tool makes it much easy for various business of any size so they can filter, manage, and thereby analyzed candidates (Lindström, 2018). The article emphasizes on use of applicant tracking system which stand out to be unique to companies. But here each one can thrive for attracting, hiring and maximizing the top talent. Most of the business do encounter some sort of challenges at some point within case of hiring onboarding process. The fact should be noted an ATS can be offered with range of capabilities which can ultimately help involved companies to find, hire and thereby retain the best candidates. </p>
@@ -299,8 +306,25 @@
             const bibliography=document.querySelector(".bibliography");
             const library=document.querySelector(".library");
             const coverLetter2=document.querySelector(".cover-letter-2");
+	    const homeDetails=document.querySelector(".home-details");
+	    const homePage1=document.querySelector(".home-details-1");
+			
             document.querySelector(".intr").addEventListener("click",function(){
-				homePage.style.display="block";
+		homePage.style.display="block";
+		homeDetails.style.display="flex";
+                library.style.display="none";
+                gallery.style.display="none";
+                coverLetter.style.display="none";
+                coverLetter2.style.display="none";
+                summary.style.display="none";
+                bibliography.style.display="none";
+                resume.style.display="none";
+		homePage1.style.display="none";
+				
+			})
+		document.querySelector(".gal").addEventListener("click",function(){
+		homePage.style.display="block";
+		homeDetails.style.display="flex";
                 library.style.display="none";
                 gallery.style.display="block";
                 coverLetter.style.display="none";
@@ -308,6 +332,33 @@
                 summary.style.display="none";
                 bibliography.style.display="none";
                 resume.style.display="none";
+		homePage1.style.display="none";
+				
+			})
+		document.querySelector(".assign").addEventListener("click",function(){
+		homePage.style.display="none";
+		homeDetails.style.display="none";
+                library.style.display="none";
+                gallery.style.display="none";
+                coverLetter.style.display="none";
+                coverLetter2.style.display="none";
+                summary.style.display="none";
+                bibliography.style.display="none";
+                resume.style.display="none";
+		homePage1.style.display="block";
+				
+			})
+		document.querySelector(".home").addEventListener("click",function(){
+		homePage.style.display="block";
+		homeDetails.style.display="flex";
+                library.style.display="none";
+                gallery.style.display="none";
+                coverLetter.style.display="none";
+                coverLetter2.style.display="none";
+                summary.style.display="none";
+                bibliography.style.display="none";
+                resume.style.display="none";
+		homePage1.style.display="none";
 				
 			})
             document.querySelector(".res").addEventListener("click",function(){
@@ -319,6 +370,7 @@
                 summary.style.display="none";
                 bibliography.style.display="none";
                 resume.style.display="block";
+		homePage1.style.display="none";
                 
             });
             document.querySelector(".cov").addEventListener("click",function(){
@@ -330,7 +382,9 @@
                 bibliography.style.display="none";
                 resume.style.display="none";
                 coverLetter.style.display="block";
+		homePage1.style.display="none";
             })
+
             document.querySelector(".cov1").addEventListener("click",function(){
                 homePage.style.display="none";
                 library.style.display="none";
@@ -340,6 +394,7 @@
                 resume.style.display="none";
                 coverLetter.style.display="none";
                 coverLetter2.style.display="block";
+		homePage1.style.display="none";
             })
             document.querySelector(".sum").addEventListener("click",function(){
                 homePage.style.display="none";
@@ -350,6 +405,7 @@
                 bibliography.style.display="none";
                 resume.style.display="none";
                 summary.style.display="block";
+		homePage1.style.display="none";
             })
              document.querySelector(".bib").addEventListener("click",function(){
                 homePage.style.display="none";
@@ -360,6 +416,7 @@
                 summary.style.display="none";
                 resume.style.display="none";
                 bibliography.style.display="block";
+		homePage1.style.display="none";
             })
               document.querySelector(".lib").addEventListener("click",function(){
                 homePage.style.display="none";
@@ -370,6 +427,73 @@
                 bibliography.style.display="none";
                 resume.style.display="none";
                 library.style.display="block";
+		homePage1.style.display="none";
+            })
+	    document.querySelector("#mul1").addEventListener("click",function(){
+                homePage.style.display="none";
+                library.style.display="none";
+                gallery.style.display="none";
+                summary.style.display="none";
+                coverLetter2.style.display="none";
+                bibliography.style.display="none";
+                resume.style.display="none";
+                coverLetter.style.display="none";
+		homePage1.style.display="block";
+            })
+	    document.querySelector("#mul2").addEventListener("click",function(){
+                homePage.style.display="none";
+                library.style.display="none";
+                gallery.style.display="none";
+                summary.style.display="none";
+                coverLetter2.style.display="none";
+                bibliography.style.display="none";
+                resume.style.display="none";
+                coverLetter.style.display="none";
+		homePage1.style.display="block";
+            })
+	     document.querySelector("#mul3").addEventListener("click",function(){
+                homePage.style.display="none";
+                library.style.display="none";
+                gallery.style.display="none";
+                summary.style.display="none";
+                coverLetter2.style.display="none";
+                bibliography.style.display="none";
+                resume.style.display="none";
+                coverLetter.style.display="none";
+		homePage1.style.display="block";
+            })
+	    document.querySelector("#mul4").addEventListener("click",function(){
+                homePage.style.display="none";
+                library.style.display="none";
+                gallery.style.display="none";
+                summary.style.display="none";
+                coverLetter2.style.display="none";
+                bibliography.style.display="none";
+                resume.style.display="none";
+                coverLetter.style.display="none";
+		homePage1.style.display="block";
+            })
+			document.querySelector("#mul5").addEventListener("click",function(){
+                homePage.style.display="none";
+                library.style.display="none";
+                gallery.style.display="none";
+                summary.style.display="none";
+                coverLetter2.style.display="none";
+                bibliography.style.display="none";
+                resume.style.display="none";
+                coverLetter.style.display="none";
+		homePage1.style.display="block";
+            })
+	    document.querySelector("#mul6").addEventListener("click",function(){
+                homePage.style.display="none";
+                library.style.display="none";
+                gallery.style.display="none";
+                summary.style.display="none";
+                coverLetter2.style.display="none";
+                bibliography.style.display="none";
+                resume.style.display="none";
+                coverLetter.style.display="none";
+	        homePage1.style.display="block";
             })
   
             
