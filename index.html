@@ -23,11 +23,10 @@
                 font-family: fantasy;
             }
             .home-page{
-                width:50%;
-                margin: auto;
-                text-align: center;
-                margin-top: 10%;
-
+				 margin-top: 5%;
+                 padding:30px 30px 0px 30px;
+                 border-radius: 7px;
+                 padding-top:70px;
             }
             .home-details{
                 position: fixed;
@@ -46,9 +45,15 @@
             .home-details p:hover{
                 text-shadow: 1px 1px 10px #FFf;
             }
-            .resume,.gallery,.cover-letter,.cover-letter-2,.bibliography,.summary,.library{
+            .resume,.cover-letter,.cover-letter-2,.bibliography,.summary,.library{
                 margin-top: 5%;
                 display:none;
+                padding:30px 30px 0px 30px;
+                border-radius: 7px;
+                padding-top:70px;
+            }
+			 .gallery{
+                margin-top: 5%;
                 padding:30px 30px 0px 30px;
                 border-radius: 7px;
                 padding-top:70px;
@@ -116,27 +121,27 @@
                 padding: 30px 15px;
             }
             @media screen and (max-width:945px){
-            .resume,.gallery,.cover-letter,.cover-letter-2,.bibliography,.summary,.library{
+            .resume,.cover-letter,.cover-letter-2,.bibliography,.summary,.library{
 				margin-top: 11%;
             }
-		    .home-page{
-					margin-top: 20%;
+				.home-page{
+					margin-top: 10%;
 				}
 			}
 			@media screen and (max-width:680px){
-            .resume,.gallery,.cover-letter,.cover-letter-2,.bibliography,.summary,.library{
+            .resume,.cover-letter,.cover-letter-2,.bibliography,.summary,.library{
 				margin-top: 18%;
             }
 				.home-page{
-					margin-top: 26%;
+					margin-top: 19%;
 				}
 			}
 			@media screen and (max-width:560px){
-            .resume,.gallery,.cover-letter,.cover-letter-2,.bibliography,.summary,.library{
+            .resume,.cover-letter,.cover-letter-2,.bibliography,.summary,.library{
 				margin-top: 35%;
             }
 				.home-page{
-					margin-top: 50%;
+					margin-top: 36%;
 				}
 			}
 
@@ -144,8 +149,8 @@
     </head>
     <body>
         <div class="home-details">
+			    <p class="intr">INTRO</p>
                 <p class="res">RESUME</p>
-                <p class="gal">GALLERY</p>
                 <p class="cov">COVER LETTER - 1</p>
                 <p class="cov1">COVER LETTER - 2</p>
                 <p class="sum">SUMMARY</p>
@@ -153,10 +158,9 @@
                 <P class="lib">LIBRARY</P>
         </div>
         <div class="home-page">
-            <hr/><br/>
-            <h1 style="font-weight:500">VENKATA ASHOK KUMAR REDDY MARAM</h1>
-            <p style="font-weight:500">TO KNOW MORE ABOUT ME CHOOSE THE FOLLOWING..</p><br/>
-            <hr/>
+            <h2>VENKATA ASHOK KUMAR REDDY MARAM</h2>
+			<p>Pursuing Master’s Degree Course in Computer Information System at New England College.</p>
+			<p>Interest and hobbies: Reading,Design,Writing And Photography.</p>
         </div>
 
         
@@ -295,8 +299,17 @@
             const bibliography=document.querySelector(".bibliography");
             const library=document.querySelector(".library");
             const coverLetter2=document.querySelector(".cover-letter-2");
-            
-            
+            document.querySelector(".intr").addEventListener("click",function(){
+				homePage.style.display="block";
+                library.style.display="none";
+                gallery.style.display="block";
+                coverLetter.style.display="none";
+                coverLetter2.style.display="none";
+                summary.style.display="none";
+                bibliography.style.display="none";
+                resume.style.display="none";
+				
+			})
             document.querySelector(".res").addEventListener("click",function(){
                 homePage.style.display="none";
                 library.style.display="none";
@@ -308,16 +321,6 @@
                 resume.style.display="block";
                 
             });
-            document.querySelector(".gal").addEventListener("click",function(){
-                homePage.style.display="none";
-                library.style.display="none";
-                coverLetter.style.display="none";
-                coverLetter2.style.display="none";
-                summary.style.display="none";
-                bibliography.style.display="none";
-                resume.style.display="none";
-                gallery.style.display="block";
-            })
             document.querySelector(".cov").addEventListener("click",function(){
                 homePage.style.display="none";
                 library.style.display="none";
